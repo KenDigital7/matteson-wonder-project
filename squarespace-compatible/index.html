@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteson Children's Museum - Invest in Wonder, Invest in Equity</title>
+    <meta name="description" content="Join us in creating an extraordinary children's museum in Matteson, IL. Support our feasibility study to bring educational equity and wonder to south suburban Cook County families.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/lovable-uploads/d28b307a-f288-4126-ba69-3c9b25921437.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="/lovable-uploads/d28b307a-f288-4126-ba69-3c9b25921437.png" alt="Matteson Children's Museum Logo" class="logo">
+                    <div class="logo-text">
+                        <h1>Matteson Children's Museum</h1>
+                        <p>Invest in Wonder</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#mission" class="nav-link">About</a>
+                    <a href="#vision" class="nav-link">Vision</a>
+                    <a href="#timeline" class="nav-link">Timeline</a>
+                    <a href="#leadership" class="nav-link">Leadership</a>
+                    <a href="#get-involved" class="nav-link">Support Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('get-involved')">Donate Now</button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#mission" class="nav-link" onclick="closeMobileMenu()">About</a>
+                <a href="#vision" class="nav-link" onclick="closeMobileMenu()">Vision</a>
+                <a href="#timeline" class="nav-link" onclick="closeMobileMenu()">Timeline</a>
+                <a href="#leadership" class="nav-link" onclick="closeMobileMenu()">Leadership</a>
+                <a href="#get-involved" class="nav-link" onclick="closeMobileMenu()">Support Us</a>
+                <button class="btn btn-primary" onclick="scrollToSection('get-involved')">Donate Now</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Invest in Wonder.
+                        <span class="hero-accent">Invest in Equity.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Join us in creating an extraordinary 50,000 sq ft children's museum in Matteson, IL, 
+                        designed to bring educational equity and wonder to south suburban Cook County families.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToSection('get-involved')">
+                            Support Our Mission
+                            <span class="arrow">→</span>
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="scrollToSection('mission')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/lovable-uploads/b02b0fb5-6312-4f1c-a29b-fe952aeadd31.png" alt="Matteson Children's Museum Concept Rendering">
+                    <div class="hero-badge">Opening 2028!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Mission</h2>
+                <p class="section-description">
+                    To improve the lives of children in Matteson and Chicago's South Suburban region by creating 
+                    extraordinary learning experiences across the arts, sciences, and humanities that stimulate 
+                    creativity and critical thinking.
+                </p>
+            </div>
+
+            <div class="quote-box">
+                <blockquote>
+                    "Illinois ranks among the most inequitable states in the nation for educational opportunity."
+                </blockquote>
+                <cite>— 2024 <em>Inequity in Illinois</em> Report</cite>
+            </div>
+
+            <div class="mission-cards">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Educational Equity</h3>
+                    <p>South suburban Cook County children deserve the same high-quality educational experiences available in affluent communities.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Community Building</h3>
+                    <p>Creating a destination that brings families together and strengthens our community bonds while celebrating diversity.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Economic Development</h3>
+                    <p>Transforming underutilized land into a thriving educational hub that attracts visitors and supports local businesses.</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">25</div>
+                    <p>miles to nearest children's museum</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">62,900</div>
+                    <p>daily traffic count</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50,000+</div>
+                    <p>children in target region</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">2028</div>
+                    <p>planned opening year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Vision</h2>
+                <p class="section-description">
+                    A 4-acre destination rising from the former Lincoln Mall site, designed to serve 
+                    as a symbol of equity and opportunity for our community.
+                </p>
+            </div>
+
+            <div class="vision-cards">
+                <div class="card feature-card">
+                    <div class="card-icon">🏢</div>
+                    <h3>50,000 sq ft</h3>
+                    <h4>Museum Building</h4>
+                    <p>Interactive exhibits spanning arts, sciences, and humanities. Designed for accessibility and inclusive learning.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="card-icon">🚗</div>
+                    <h3>1 Acre</h3>
+                    <h4>Parking Area</h4>
+                    <p>Ample, accessible parking ensuring easy visits for families throughout the region.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="card-icon">🌳</div>
+                    <h3>2 Acres</h3>
+                    <h4>Outdoor Campus</h4>
+                    <p>Nature-based learning environments and outdoor classrooms connecting children with nature.</p>
+                </div>
+            </div>
+
+            <div class="location-info">
+                <div class="location-text">
+                    <div class="location-header">
+                        <span class="map-icon">🗺️</span>
+                        <h3>Strategic Location</h3>
+                    </div>
+                    <div class="location-details">
+                        <p><strong>Prime accessibility:</strong> Located near the intersection of Cicero Avenue and Lincoln Highway with 62,900 daily vehicles</p>
+                        <p><strong>Community integration:</strong> Part of the planned Market Square Crossing development</p>
+                        <p><strong>Future synergies:</strong> Complementary youth athletic fields and recreational facilities nearby</p>
+                    </div>
+                </div>
+                <div class="location-image">
+                    <img src="/lovable-uploads/40777a1a-2e64-49d7-bba5-d08d995054ad.png" alt="Site Development Plan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Timeline</h2>
+                <p class="section-description">
+                    From incorporation to grand opening: our roadmap to creating the Matteson Children's Museum
+                </p>
+                <div class="current-status">
+                    <span class="status-icon">🕐</span>
+                    <span>We Are Here: Q1 2025</span>
+                </div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-events">
+                    <div class="timeline-event completed">
+                        <div class="event-marker">✓</div>
+                        <div class="event-content">
+                            <h3>Incorporation, IRS TIN</h3>
+                            <span class="event-date">2Q2024</span>
+                            <p>Officially incorporated as a 501(c)(3) nonprofit organization</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event completed">
+                        <div class="event-marker">✓</div>
+                        <div class="event-content">
+                            <h3>Obtain Matteson & Cook County Letters of Support</h3>
+                            <span class="event-date">4Q2024</span>
+                            <p>Secured official community endorsements</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event current">
+                        <div class="event-marker">🕐</div>
+                        <div class="event-content">
+                            <h3>Apply for Pre-Development Grants</h3>
+                            <span class="event-date">1Q2025</span>
+                            <p>Seeking initial funding for feasibility study and planning</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event upcoming">
+                        <div class="event-marker">○</div>
+                        <div class="event-content">
+                            <h3>Engage Feasibility Study</h3>
+                            <span class="event-date">3Q2025</span>
+                            <p>Comprehensive analysis of financial viability and sustainability</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event upcoming">
+                        <div class="event-marker">○</div>
+                        <div class="event-content">
+                            <h3>Grand Opening</h3>
+                            <span class="event-date">4Q2028</span>
+                            <p>Official opening to the public</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="priority-callout">
+                <h3>Current Priority: Feasibility Study Funding</h3>
+                <p>Your support helps us complete the crucial feasibility study that will confirm project viability and unlock major funding opportunities through New Market Tax Credits.</p>
+                <button class="btn btn-secondary" onclick="scrollToSection('get-involved')">Support the Feasibility Study</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="get-involved">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Involved</h2>
+                <p class="section-description">
+                    Join us in creating an extraordinary children's museum that will serve as a beacon 
+                    of educational equity and community pride for generations to come.
+                </p>
+            </div>
+
+            <div class="cta-banner">
+                <h3>Support Our Feasibility Study</h3>
+                <p>Your investment in our feasibility study is the critical first step toward securing $15-20 million in New Market Tax Credits and making this vision a reality.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-light btn-lg" onclick="showDonationForm()">💰 Donate Now</button>
+                    <button class="btn btn-outline-light btn-lg" onclick="showContactForm()">Schedule a Meeting</button>
+                </div>
+            </div>
+
+            <div class="donation-levels">
+                <h3>Founding Member Recognition</h3>
+                <p>Early supporters will be recognized as founding members with special benefits and recognition.</p>
+                <div class="level-cards">
+                    <div class="level-card champion">
+                        <div class="level-icon">⭐</div>
+                        <h4>Champion</h4>
+                        <p class="level-amount">$25,000+</p>
+                        <ul>
+                            <li>Recognition as Founding Champion</li>
+                            <li>Exclusive updates and events</li>
+                            <li>Personal consultation with leadership</li>
+                            <li>Naming opportunity consideration</li>
+                        </ul>
+                    </div>
+                    <div class="level-card advocate">
+                        <div class="level-icon">🏢</div>
+                        <h4>Advocate</h4>
+                        <p class="level-amount">$10,000+</p>
+                        <ul>
+                            <li>Recognition as Founding Advocate</li>
+                            <li>Quarterly progress reports</li>
+                            <li>Private donor events</li>
+                            <li>Early access to programs</li>
+                        </ul>
+                    </div>
+                    <div class="level-card supporter">
+                        <div class="level-icon">❤️</div>
+                        <h4>Supporter</h4>
+                        <p class="level-amount">$2,500+</p>
+                        <ul>
+                            <li>Recognition as Founding Supporter</li>
+                            <li>Semi-annual updates</li>
+                            <li>Donor appreciation events</li>
+                            <li>Museum preview access</li>
+                        </ul>
+                    </div>
+                    <div class="level-card friend">
+                        <div class="level-icon">👥</div>
+                        <h4>Friend</h4>
+                        <p class="level-amount">$500+</p>
+                        <ul>
+                            <li>Recognition as Founding Friend</li>
+                            <li>Annual updates</li>
+                            <li>Community events invitation</li>
+                            <li>Early membership offers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-forms">
+                    <div class="form-section">
+                        <h3>Stay Connected</h3>
+                        <p>Get updates on our progress, upcoming events, and new opportunities to get involved.</p>
+                        <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn btn-primary">📧 Subscribe to Updates</button>
+                        </form>
+                    </div>
+                    <div class="form-section">
+                        <h3>Partnership Inquiries</h3>
+                        <p>Interested in corporate sponsorship, major gift opportunities, or community partnerships?</p>
+                        <form class="contact-form" onsubmit="handleContactForm(event)">
+                            <input type="text" placeholder="Name / Organization" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Tell us about your interest in supporting the Matteson Children's Museum..." required></textarea>
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/lovable-uploads/d28b307a-f288-4126-ba69-3c9b25921437.png" alt="Matteson Children's Museum Logo">
+                        <div>
+                            <h3>Matteson Children's Museum</h3>
+                            <p>Invest in Wonder</p>
+                        </div>
+                    </div>
+                    <p>Creating extraordinary learning experiences that promote educational equity in south suburban Cook County.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <p>PO Box 1735</p>
+                                <p>Matteson, IL 60443</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:info@mattesonchildrensmuseum.org">info@mattesonchildrensmuseum.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Project Timeline</h4>
+                    <div class="timeline-list">
+                        <div class="timeline-item">
+                            <span>Incorporated:</span>
+                            <span>May 2024</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span>Feasibility Study:</span>
+                            <span>2025</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span>Construction:</span>
+                            <span>2027-2028</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span>Grand Opening:</span>
+                            <span>Q4 2028</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Matteson Children's Museum. All rights reserved.</p>
+                <p>501(c)(3) Nonprofit Organization</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
