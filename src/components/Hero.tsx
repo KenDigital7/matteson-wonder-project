@@ -1,61 +1,45 @@
-
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import React from "react";
 
 const Hero = () => {
-  const scrollToGetInvolved = () => {
-    const element = document.getElementById('get-involved');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 to-white py-16 lg:py-24">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-white h-[70vh] overflow-hidden">
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto h-[70vh] flex items-center justify-center px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold text-primary leading-tight">
-                Invest in Wonder.
-                <span className="block text-accent">Invest in Equity.</span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Join us in creating an extraordinary 50,000 sq ft children's museum in Matteson, IL, 
-                designed to bring educational equity and wonder to south suburban Cook County families.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={scrollToGetInvolved}
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
-              >
-                Support Our Mission
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => document.getElementById('mission')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-lg px-8 py-6"
-              >
-                Learn More
-              </Button>
+          {/* Logo Section */}
+          <div className="flex justify-center lg:justify-end order-2 lg:order-1">
+            <div className="relative">
+              <img
+                src="/images/Logo/MCM_Logo.png"
+                alt="Matteson Children's Museum Logo"
+                className="w-64 h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+              />
+              {/* Subtle glow effect behind logo */}
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-200 to-blue-200 rounded-full blur-3xl opacity-30 -z-10 scale-110"></div>
             </div>
           </div>
-
-          <div className="relative animate-scale-in">
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/b02b0fb5-6312-4f1c-a29b-fe952aeadd31.png" 
-                alt="Matteson Children's Museum Concept Rendering" 
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
-              <div className="absolute -top-4 -right-4 bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                Opening 2028!
-              </div>
+          
+          {/* Text Content */}
+          <div className="text-center lg:text-left order-1 lg:order-2">
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-gray-800 mb-6">
+              The Matteson Children's Museum
+            </h1>
+            
+            {/* Opening Banner */}
+            <div className="inline-block bg-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg mb-6 animate-pulse">
+              Opening 2028!
+            </div>
+            
+            <p className="text-lg lg:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+              A place where wonder comes alive, creativity flourishes, and every child's potential is celebrated.
+            </p>
+            
+            {/* Location Badge */}
+            <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg text-gray-700 font-medium">
+              <svg className="w-5 h-5 mr-2 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              </svg>
+              Matteson, Illinois
             </div>
           </div>
         </div>

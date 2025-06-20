@@ -1,0 +1,73 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Universal Accessibility Icon -->
+  <defs>
+    <linearGradient id="wheelchair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="person" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="symbols" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="40" fill="#EBF8FF" stroke="url(#person)" stroke-width="3" />
+  
+  <!-- Person in wheelchair -->
+  <!-- Head -->
+  <circle cx="45" cy="25" r="6" fill="url(#person)" />
+  
+  <!-- Body -->
+  <rect x="42" y="32" width="6" height="15" fill="url(#person)" rx="3" />
+  
+  <!-- Arms -->
+  <rect x="35" y="35" width="8" height="3" fill="url(#person)" rx="1.5" />
+  <rect x="47" y="35" width="8" height="3" fill="url(#person)" rx="1.5" />
+  
+  <!-- Wheelchair seat -->
+  <rect x="38" y="45" width="14" height="8" fill="url(#wheelchair)" rx="2" />
+  
+  <!-- Large wheel -->
+  <circle cx="45" cy="65" r="12" fill="none" stroke="url(#wheelchair)" stroke-width="4" />
+  <circle cx="45" cy="65" r="8" fill="none" stroke="url(#wheelchair)" stroke-width="2" />
+  
+  <!-- Small front wheel -->
+  <circle cx="60" cy="70" r="4" fill="url(#wheelchair)" />
+  
+  <!-- Wheelchair frame -->
+  <line x1="52" y1="50" x2="60" y2="66" stroke="url(#wheelchair)" stroke-width="3" />
+  <line x1="38" y1="50" x2="33" y2="65" stroke="url(#wheelchair)" stroke-width="3" />
+  
+  <!-- Accessibility symbols around -->
+  <!-- Hearing aid symbol -->
+  <circle cx="20" cy="30" r="3" fill="url(#symbols)" />
+  <path d="M17 30 Q15 28 15 25 Q15 22 17 20" stroke="url(#symbols)" stroke-width="2" fill="none" />
+  
+  <!-- Eye/vision symbol -->
+  <ellipse cx="80" cy="30" rx="4" ry="2.5" fill="url(#symbols)" />
+  <circle cx="80" cy="30" r="1.5" fill="#FFFFFF" />
+  
+  <!-- Braille dots -->
+  <circle cx="20" cy="70" r="1" fill="url(#symbols)" />
+  <circle cx="23" cy="70" r="1" fill="url(#symbols)" />
+  <circle cx="20" cy="73" r="1" fill="url(#symbols)" />
+  <circle cx="23" cy="73" r="1" fill="url(#symbols)" />
+  <circle cx="20" cy="76" r="1" fill="url(#symbols)" />
+  <circle cx="23" cy="76" r="1" fill="url(#symbols)" />
+  
+  <!-- Sign language hands -->
+  <path d="M75 65 Q80 62 82 67 Q85 65 87 70 Q85 75 80 73 Q75 75 73 70 Q75 67 75 65" 
+        fill="url(#symbols)" />
+  
+  <!-- Universal access heart -->
+  <path d="M50 15 C47 12 43 12 43 16 C43 12 39 12 36 15 C36 20 43 26 50 30 C57 26 64 20 64 15 C61 12 57 12 57 16 C57 12 53 12 50 15 Z" 
+        fill="#F59E0B" opacity="0.8" />
+  
+  <!-- Inclusivity text -->
+  <text x="50" y="90" text-anchor="middle" font-family="Arial" font-size="6" fill="url(#symbols)" font-weight="bold">ACCESSIBLE</text>
+</svg> 

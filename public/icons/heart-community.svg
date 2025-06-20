@@ -1,0 +1,83 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Community Heart -->
+  <defs>
+    <linearGradient id="heart-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hands" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="children" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34D399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="community" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Large central heart -->
+  <path d="M50 25 C45 15 35 15 35 30 C35 15 25 15 20 25 C20 40 35 55 50 70 C65 55 80 40 80 25 C75 15 65 15 65 30 C65 15 55 15 50 25 Z" 
+        fill="url(#heart-main)" />
+  
+  <!-- Inner heart shine -->
+  <path d="M50 30 C47 22 40 22 40 32 C40 22 33 22 30 30 C30 40 40 48 50 58 C60 48 70 40 70 30 C67 22 60 22 60 32 C60 22 53 22 50 30 Z" 
+        fill="#F87171" opacity="0.6" />
+  
+  <!-- Protective hands around heart -->
+  <path d="M25 40 Q20 35 15 40 Q10 45 15 50 Q20 55 25 50 Q30 45 25 40 Z" fill="url(#hands)" />
+  <path d="M75 40 Q80 35 85 40 Q90 45 85 50 Q80 55 75 50 Q70 45 75 40 Z" fill="url(#hands)" />
+  
+  <!-- Small children figures around the heart -->
+  <!-- Child 1 -->
+  <circle cx="35" cy="75" r="3" fill="url(#children)" />
+  <rect x="33" y="78" width="4" height="6" fill="url(#children)" />
+  <circle cx="34" cy="74" r="0.5" fill="#000000" />
+  <circle cx="36" cy="74" r="0.5" fill="#000000" />
+  <path d="M33 76 Q35 77 37 76" stroke="#000000" stroke-width="0.5" fill="none" />
+  
+  <!-- Child 2 -->
+  <circle cx="50" cy="80" r="3" fill="#F472B6" />
+  <rect x="48" y="83" width="4" height="6" fill="#F472B6" />
+  <circle cx="49" cy="79" r="0.5" fill="#000000" />
+  <circle cx="51" cy="79" r="0.5" fill="#000000" />
+  <path d="M48 81 Q50 82 52 81" stroke="#000000" stroke-width="0.5" fill="none" />
+  
+  <!-- Child 3 -->
+  <circle cx="65" cy="75" r="3" fill="#3B82F6" />
+  <rect x="63" y="78" width="4" height="6" fill="#3B82F6" />
+  <circle cx="64" cy="74" r="0.5" fill="#000000" />
+  <circle cx="66" cy="74" r="0.5" fill="#000000" />
+  <path d="M63 76 Q65 77 67 76" stroke="#000000" stroke-width="0.5" fill="none" />
+  
+  <!-- Community connection lines -->
+  <line x1="35" y1="72" x2="47" y2="65" stroke="url(#community)" stroke-width="2" opacity="0.7" />
+  <line x1="50" y1="77" x2="50" y2="65" stroke="url(#community)" stroke-width="2" opacity="0.7" />
+  <line x1="65" y1="72" x2="53" y2="65" stroke="url(#community)" stroke-width="2" opacity="0.7" />
+  
+  <!-- Small hearts floating around -->
+  <path d="M15 20 C13 18 11 18 11 21 C11 18 9 18 7 20 C7 23 11 26 15 29 C19 26 23 23 23 20 C21 18 19 18 19 21 C19 18 17 18 15 20 Z" 
+        fill="#F59E0B" opacity="0.8" />
+  
+  <path d="M85 20 C83 18 81 18 81 21 C81 18 79 18 77 20 C77 23 81 26 85 29 C89 26 93 23 93 20 C91 18 89 18 89 21 C89 18 87 18 85 20 Z" 
+        fill="#10B981" opacity="0.8" />
+  
+  <!-- Community text -->
+  <text x="50" y="95" text-anchor="middle" font-family="Arial" font-size="6" fill="url(#community)" font-weight="bold">COMMUNITY</text>
+  
+  <!-- Sparkles around heart -->
+  <path d="M20 30 L22 32 L20 34 L18 32 Z" fill="#FBBF24" />
+  <path d="M80 30 L82 32 L80 34 L78 32 Z" fill="#FBBF24" />
+  <path d="M30 15 L31 17 L30 19 L29 17 Z" fill="#FBBF24" />
+  <path d="M70 15 L71 17 L70 19 L69 17 Z" fill="#FBBF24" />
+  
+  <!-- Hope and care symbols -->
+  <circle cx="25" cy="60" r="2" fill="#8B5CF6" />
+  <text x="25" y="62" text-anchor="middle" font-family="Arial" font-size="2" fill="#FFFFFF">♪</text>
+  
+  <circle cx="75" cy="60" r="2" fill="#EF4444" />
+  <text x="75" y="62" text-anchor="middle" font-family="Arial" font-size="2" fill="#FFFFFF">✨</text>
+</svg> 

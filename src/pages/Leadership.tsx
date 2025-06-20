@@ -1,10 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Mail, User } from "lucide-react";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const LeadershipPage = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const boardMembers = [
     {
       name: "Michelle Kennedy",
@@ -49,15 +55,21 @@ const LeadershipPage = () => {
       
       {/* Board of Directors Header with Board President */}
       <section className="py-[25px] relative bg-gradient-to-br from-orange-400 via-red-500 to-pink-500">
-        {/* Background image with opacity */}
+        {/* Background image at full opacity */}
         <div 
           className="absolute inset-0"
           style={{
             backgroundImage: `url('/images/Leadership Headshots/mediaken_silhouettes_of_cog_wheels_with_tiled_pattern_flat_prim_7e66f4d5-f104-4594-b49a-b8601840825e.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundBlendMode: 'overlay',
-            opacity: 0.8
+            backgroundBlendMode: 'overlay'
+          }}
+        ></div>
+        {/* Black overlay with 60% opacity */}
+        <div 
+          className="absolute inset-0 bg-black"
+          style={{
+            opacity: 0.6
           }}
         ></div>
         <div className="container mx-auto px-4 relative z-10">
