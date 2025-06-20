@@ -4,6 +4,12 @@
 
 **URL**: https://lovable.dev/projects/2c327173-f56d-49e5-99bf-2c520bf1e83d
 
+## Deployment
+
+This site is automatically deployed to GitHub Pages via GitHub Actions.
+
+Live site: https://kendigital7.github.io/matteson-wonder-project/
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
