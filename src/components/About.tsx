@@ -1,6 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Image, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    img.style.display = 'none';
+    const fallback = img.nextElementSibling as HTMLElement;
+    if (fallback) {
+      fallback.style.display = 'flex';
+    }
+  };
+
   return (
     <section id="about" className="py-16" style={{ backgroundColor: '#FF6B35' }}>
       <div className="container mx-auto px-4">
@@ -45,7 +55,15 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Edu.Equality.png?v=3" alt="Educational Equity" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img 
+                    src="https://kendigital7.github.io/matteson-wonder-project/images/Icons/Edu.Equality.png" 
+                    alt="Educational Equity" 
+                    className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain"
+                    onError={handleImageError}
+                  />
+                  <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-orange-100 rounded-lg flex items-center justify-center hidden">
+                    <Image className="w-16 h-16 sm:w-24 sm:h-24 text-orange-500" />
+                  </div>
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Educational Equity</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
@@ -57,7 +75,15 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Community.png?v=3" alt="Community Building" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img 
+                    src="https://kendigital7.github.io/matteson-wonder-project/images/Icons/Community.png" 
+                    alt="Community Building" 
+                    className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain"
+                    onError={handleImageError}
+                  />
+                  <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-blue-100 rounded-lg flex items-center justify-center hidden">
+                    <Users className="w-16 h-16 sm:w-24 sm:h-24 text-blue-500" />
+                  </div>
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Community Building</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
@@ -69,7 +95,15 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg sm:col-span-2 lg:col-span-1">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Impact.png?v=3" alt="Economic Impact" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img 
+                    src="https://kendigital7.github.io/matteson-wonder-project/images/Icons/Impact.png" 
+                    alt="Economic Impact" 
+                    className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain"
+                    onError={handleImageError}
+                  />
+                  <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-green-100 rounded-lg flex items-center justify-center hidden">
+                    <TrendingUp className="w-16 h-16 sm:w-24 sm:h-24 text-green-500" />
+                  </div>
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Economic Impact</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
