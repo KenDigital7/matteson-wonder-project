@@ -16,35 +16,35 @@ const LeadershipPage = () => {
       name: "Michelle Kennedy",
       title: "Founder & Board President",
       position: "Founder + Executive Director + Board President",
-      image: null, // Placeholder - no image available
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Logo/MCM_Logo.png", // Using museum logo as placeholder
       bio: "Michelle Kennedy is the Founder + Executive Director + Board President of the Matteson Children's Museum (\"MCM\"). Michelle has worked for 25 years in Commercial Real Estate Finance and is currently a Vice president at US Bank. She specializes in providing equity and debt for complex urban projects with various forms of tax credit capital. Michelle has lived in Matteson for 19 years. She is also the Founder + former Producer of the Chicago South Side Film Festival. Michelle plans to enroll in Northwestern University's online Museum Studies Certificate program in the Summer of 2025."
     },
     {
       name: "Cecil Matthews", 
       title: "Director + Treasurer",
       position: "Director + Treasurer",
-      image: null, // Placeholder - no image available
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Logo/MCM_Logo.png", // Using museum logo as placeholder
       bio: "Cecil Matthews earned Bachelor of Science and a Master of Science degrees in Accounting from the University of Illinois. For the past 15 years, Cecil has resided in the South / Southwest suburbs – most recently in Frankfort, IL. Cecil has a diverse background in accounting, finance, and IT. He currently works as Director of Finance for a large Chicago law firm, and is also a licensed real estate broker and real estate investor."
     },
     {
       name: "Aleatha Muhammad",
       title: "Director + Secretary", 
       position: "Director + Secretary",
-      image: "/images/Leadership Headshots/Aleatha.Muhammad.jpg",
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/Aleatha.Muhammad.jpg",
       bio: "Aleatha is a Financial Consultant with Cetera Advisor Networks and runs a comprehensive wealth management and insurance practice working primarily with business owners and medical professionals. A former Vice President of Academic Relations and Board Member for the Chicago-West Chapter of the Institute of Internal Auditors, she has also served on several boards, including Garfield Park Community Council, Providence St. Mel Alumni Advisory Board and continues to volunteer with various community endeavors. She lives in Maywood, IL."
     },
     {
       name: "LaTanya Harris",
       title: "Director",
       position: "Director", 
-      image: "/images/Leadership Headshots/LaTanya.Harris.jpg", 
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/LaTanya.Harris.jpg", 
       bio: "LaTanya Harris holds a Master's degree in Social Work from Loyola University and a Master of Education degree from Governors State University. With over 20 years of experience in the field of education, she has spent the last 14 years as a high school principal. LaTanya's extensive background in both social work and education provides her with a unique perspective on student development and community engagement. Passionate about empowering students and educators alike, she strives to implement innovative programs that enhance academic achievement and overall well-being. She lives in Matteson, IL."
     },
     {
       name: "Bevon Joseph",
       title: "Director",
       position: "Director",
-      image: "/images/Leadership Headshots/Bevon.Joseph.jpg",
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/Bevon.Joseph.jpg",
       bio: "Bevon Joseph is the founder of the Greenwood Project. Through his combined efforts with the Greenwood Project, his extensive personal engagements—such as speaking at conferences, mentoring students, and collaborating with educational institutions— and his recent work with the New York City Department of Education, Bevon has positively impacted the lives of over 2,000 Black and Latinx students. His initiatives have significantly contributed to a high on-time graduation and full employment rate among college graduates involved in his programs. His academic credentials include a B.A. from DePaul University and participation in the Kellogg School of Management's Executive Education leadership program."
     }
   ];
@@ -59,7 +59,7 @@ const LeadershipPage = () => {
         <div 
           className="absolute inset-0"
           style={{
-            backgroundImage: `url('/images/Leadership Headshots/mediaken_silhouettes_of_cog_wheels_with_tiled_pattern_flat_prim_7e66f4d5-f104-4594-b49a-b8601840825e.png')`,
+            backgroundImage: `url('https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/mediaken_silhouettes_of_cog_wheels_with_tiled_pattern_flat_prim_7e66f4d5-f104-4594-b49a-b8601840825e.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundBlendMode: 'overlay'

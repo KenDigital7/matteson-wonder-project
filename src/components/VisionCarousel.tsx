@@ -8,52 +8,52 @@ const visionSpaces = [
   {
     name: "Creative Art Lab",
     description: "Vibrant studios where young artists unleash their creativity",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Creative Art Lab/mediaken_Vibrant_childrens_art_studio_with_easels_art_supplies__8a481bd6-4751-49d5-a042-f8cb32752a22.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Creative Art Lab/mediaken_Vibrant_childrens_art_studio_with_easels_art_supplies__8a481bd6-4751-49d5-a042-f8cb32752a22.jpg"]
   },
   {
     name: "Music Lab", 
     description: "Professional recording studios designed for young musicians",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Music Lab/mediaken_Kid-friendly_recording_studio_with_professional_equipm_d9a216dd-1cdf-446c-bf5e-e3ab813fc8f5.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Music Lab/mediaken_Kid-friendly_recording_studio_with_professional_equipm_d9a216dd-1cdf-446c-bf5e-e3ab813fc8f5.jpg"]
   },
   {
     name: "Food Lab",
     description: "Modern cooking classroom where future chefs learn and explore",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Food Lab/mediaken_Modern_childrens_cooking_classroom_with_kid-sized_cook_37777b02-33d8-4da9-94d7-007d92c8831e.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Food Lab/mediaken_Modern_childrens_cooking_classroom_with_kid-sized_cook_37777b02-33d8-4da9-94d7-007d92c8831e.jpg"]
   },
   {
     name: "Learning Garden",
     description: "Agricultural learning spaces connecting children with nature and sustainability",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Garden/mediaken_Modern_childrens_agricultural_learning_garden_with_rai_1647da46-2b00-43a5-a574-ebbe708a0a7a.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Garden/mediaken_Modern_childrens_agricultural_learning_garden_with_rai_1647da46-2b00-43a5-a574-ebbe708a0a7a.jpg"]
   },
   {
     name: "Gathering Space",
     description: "Large multipurpose space for community events and flexible programming",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Gathering Space/mediaken_Large_open_multipurpose_space_in_childrens_museum_flex_915363d3-b267-49b6-8171-fc143b87259b.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Gathering Space/mediaken_Large_open_multipurpose_space_in_childrens_museum_flex_915363d3-b267-49b6-8171-fc143b87259b.jpg"]
   },
   {
     name: "Classrooms",
     description: "Modern learning environments with colorful, engaging furniture",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Classrooms/mediaken_Modern_childrens_museum_classroom_with_colorful_furnit_c9624285-941b-4318-b67c-dd78100882bd.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Classrooms/mediaken_Modern_childrens_museum_classroom_with_colorful_furnit_c9624285-941b-4318-b67c-dd78100882bd.jpg"]
   },
   {
     name: "Theater",
     description: "State-of-the-art performance space for shows and education",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Theater/mediaken_add_theater_screen_to_new_area_--ar_9151_--raw_--v_7_a3498b23-a6e7-4f58-9902-8c3257a139d2.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Theater/mediaken_add_theater_screen_to_new_area_--ar_9151_--raw_--v_7_a3498b23-a6e7-4f58-9902-8c3257a139d2.jpg"]
   },
   {
     name: "Interactive Exhibits",
     description: "Flexible exhibition spaces designed for hands-on learning",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Exhibits/mediaken_Flexible_museum_exhibition_space_with_modular_displays_802b7a21-ddd1-4415-a5f6-798f3540ef40.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Exhibits/mediaken_Flexible_museum_exhibition_space_with_modular_displays_802b7a21-ddd1-4415-a5f6-798f3540ef40.jpg"]
   },
   {
     name: "Water Play Area",
     description: "Interactive water features for sensory exploration and fun",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Waterpark/mediaken_Interactive_water_play_area_for_children_with_fountain_7a8be651-1150-4a35-ad3b-04276ca60c50.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Waterpark/mediaken_Interactive_water_play_area_for_children_with_fountain_7a8be651-1150-4a35-ad3b-04276ca60c50.jpg"]
   },
   {
     name: "Outdoor Playground",
     description: "Contemporary play space connecting children with nature",
-    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Playground/mediaken_Contemporary_outdoor_childrens_play_area_with_modern_p_5e0bca48-3617-48a1-9b04-c1dd9d34de83.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Playground/mediaken_Contemporary_outdoor_childrens_play_area_with_modern_p_5e0bca48-3617-48a1-9b04-c1dd9d34de83.jpg"]
   }
 ];
 
