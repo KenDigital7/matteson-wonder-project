@@ -1,6 +1,6 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { ChevronLeftIcon, ChevronRightIcon, ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -8,52 +8,52 @@ const visionSpaces = [
   {
     name: "Creative Art Lab",
     description: "Vibrant studios where young artists unleash their creativity",
-    images: ["/images/Creative Art Lab/mediaken_Vibrant_childrens_art_studio_with_easels_art_supplies__8a481bd6-4751-49d5-a042-f8cb32752a22.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Creative Art Lab/mediaken_Vibrant_childrens_art_studio_with_easels_art_supplies__8a481bd6-4751-49d5-a042-f8cb32752a22.png"]
   },
   {
     name: "Music Lab", 
     description: "Professional recording studios designed for young musicians",
-    images: ["/images/Music Lab/mediaken_Kid-friendly_recording_studio_with_professional_equipm_d9a216dd-1cdf-446c-bf5e-e3ab813fc8f5.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Music Lab/mediaken_Kid-friendly_recording_studio_with_professional_equipm_d9a216dd-1cdf-446c-bf5e-e3ab813fc8f5.png"]
   },
   {
     name: "Food Lab",
     description: "Modern cooking classroom where future chefs learn and explore",
-    images: ["/images/Food Lab/mediaken_Modern_childrens_cooking_classroom_with_kid-sized_cook_37777b02-33d8-4da9-94d7-007d92c8831e.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Food Lab/mediaken_Modern_childrens_cooking_classroom_with_kid-sized_cook_37777b02-33d8-4da9-94d7-007d92c8831e.png"]
   },
   {
     name: "Learning Garden",
     description: "Agricultural learning spaces connecting children with nature and sustainability",
-    images: ["/images/Garden/mediaken_Modern_childrens_agricultural_learning_garden_with_rai_1647da46-2b00-43a5-a574-ebbe708a0a7a.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Garden/mediaken_Modern_childrens_agricultural_learning_garden_with_rai_1647da46-2b00-43a5-a574-ebbe708a0a7a.png"]
   },
   {
     name: "Gathering Space",
     description: "Large multipurpose space for community events and flexible programming",
-    images: ["/images/Gathering Space/mediaken_Large_open_multipurpose_space_in_childrens_museum_flex_915363d3-b267-49b6-8171-fc143b87259b.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Gathering Space/mediaken_Large_open_multipurpose_space_in_childrens_museum_flex_915363d3-b267-49b6-8171-fc143b87259b.png"]
   },
   {
     name: "Classrooms",
     description: "Modern learning environments with colorful, engaging furniture",
-    images: ["/images/Classrooms/mediaken_Modern_childrens_museum_classroom_with_colorful_furnit_c9624285-941b-4318-b67c-dd78100882bd.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Classrooms/mediaken_Modern_childrens_museum_classroom_with_colorful_furnit_c9624285-941b-4318-b67c-dd78100882bd.png"]
   },
   {
     name: "Theater",
     description: "State-of-the-art performance space for shows and education",
-    images: ["/images/Theater/mediaken_add_theater_screen_to_new_area_--ar_9151_--raw_--v_7_a3498b23-a6e7-4f58-9902-8c3257a139d2.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Theater/mediaken_add_theater_screen_to_new_area_--ar_9151_--raw_--v_7_a3498b23-a6e7-4f58-9902-8c3257a139d2.png"]
   },
   {
     name: "Interactive Exhibits",
     description: "Flexible exhibition spaces designed for hands-on learning",
-    images: ["/images/Exhibits/mediaken_Flexible_museum_exhibition_space_with_modular_displays_802b7a21-ddd1-4415-a5f6-798f3540ef40.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Exhibits/mediaken_Flexible_museum_exhibition_space_with_modular_displays_802b7a21-ddd1-4415-a5f6-798f3540ef40.png"]
   },
   {
     name: "Water Play Area",
     description: "Interactive water features for sensory exploration and fun",
-    images: ["/images/Waterpark/mediaken_Interactive_water_play_area_for_children_with_fountain_7a8be651-1150-4a35-ad3b-04276ca60c50.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Waterpark/mediaken_Interactive_water_play_area_for_children_with_fountain_7a8be651-1150-4a35-ad3b-04276ca60c50.png"]
   },
   {
     name: "Outdoor Playground",
     description: "Contemporary play space connecting children with nature",
-    images: ["/images/Playground/mediaken_Contemporary_outdoor_childrens_play_area_with_modern_p_5e0bca48-3617-48a1-9b04-c1dd9d34de83.png"]
+    images: ["https://kendigital7.github.io/matteson-wonder-project/images/Playground/mediaken_Contemporary_outdoor_childrens_play_area_with_modern_p_5e0bca48-3617-48a1-9b04-c1dd9d34de83.png"]
   }
 ];
 
@@ -66,6 +66,11 @@ const VisionCarousel = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [inViewSlides, setInViewSlides] = React.useState<number[]>([]);
   const [isReady, setIsReady] = React.useState(false);
+  const [imageErrors, setImageErrors] = React.useState<Set<number>>(new Set());
+
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => new Set(prev).add(index));
+  };
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -166,14 +171,29 @@ const VisionCarousel = () => {
                     >
                       <CardContent className="p-0">
                         <div className="relative group">
-                          <img
-                            src={item.src}
-                            alt={item.name}
-                            className={`w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-700 ${
-                              isSelected ? 'brightness-110' : 'brightness-100'
-                            }`}
-                            loading="lazy"
-                          />
+                          {!imageErrors.has(index) ? (
+                            <img
+                              src={item.src}
+                              alt={item.name}
+                              className={`w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-700 ${
+                                isSelected ? 'brightness-110' : 'brightness-100'
+                              }`}
+                              loading="lazy"
+                              onError={() => handleImageError(index)}
+                            />
+                          ) : (
+                            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] bg-gradient-to-br from-blue-100 via-purple-50 to-orange-100 flex items-center justify-center">
+                              <div className="text-center space-y-4">
+                                <ImageIcon className="w-16 h-16 sm:w-20 sm:h-20 text-gray-400 mx-auto" />
+                                <div className="space-y-2">
+                                  <h4 className="text-lg sm:text-xl font-semibold text-gray-600">{item.name}</h4>
+                                  <p className="text-sm text-gray-500 px-4 max-w-xs">
+                                    Architectural rendering coming soon
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          )}
                           <div className={`absolute inset-0 bg-gradient-to-t transition-all duration-700 ${
                             isSelected 
                               ? 'from-black/50 via-black/10 to-transparent' 
