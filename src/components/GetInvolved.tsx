@@ -47,7 +47,7 @@ const GetInvolved = () => {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
               <div className="flex justify-center mb-4 sm:mb-6">
-                <img src="/images/Icons/Partnership.png?v=2" alt="Partnership Opportunities" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                <img src="/images/Icons/Partnership.png?v=3" alt="Partnership Opportunities" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Partnership Opportunities</h3>
@@ -61,7 +61,7 @@ const GetInvolved = () => {
 
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
               <div className="flex justify-center mb-4 sm:mb-6">
-                <img src="/images/Icons/Leadership.png?v=2" alt="Meet Our Leadership" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                <img src="/images/Icons/Leadership.png?v=3" alt="Meet Our Leadership" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Meet Our Leadership</h3>

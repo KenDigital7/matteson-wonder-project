@@ -45,7 +45,7 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Edu.Equality.png?v=2" alt="Educational Equity" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img src="/images/Icons/Edu.Equality.png?v=3" alt="Educational Equity" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Educational Equity</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
@@ -57,7 +57,7 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Community.png?v=2" alt="Community Building" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img src="/images/Icons/Community.png?v=3" alt="Community Building" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Community Building</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
@@ -69,7 +69,7 @@ const About = () => {
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg sm:col-span-2 lg:col-span-1">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">
-                  <img src="/images/Icons/Impact.png?v=2" alt="Economic Impact" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                  <img src="/images/Icons/Impact.png?v=3" alt="Economic Impact" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Economic Impact</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
