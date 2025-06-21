@@ -118,11 +118,11 @@ const VisionCarousel = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Imagination Has No Limit
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed px-4">
             We envision a state-of-the-art facility that will serve as a cornerstone of the Southland community—
             a destination where wonder meets learning, creativity flourishes, and every child's potential is unlocked. 
             This revolutionary space will become a beloved community staple, inspiring generations of young minds 
@@ -169,7 +169,7 @@ const VisionCarousel = () => {
                           <img
                             src={item.src}
                             alt={item.name}
-                            className={`w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-700 ${
+                            className={`w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-700 ${
                               isSelected ? 'brightness-110' : 'brightness-100'
                             }`}
                             loading="lazy"

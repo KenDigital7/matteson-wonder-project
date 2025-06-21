@@ -235,11 +235,17 @@ const MissionVision = () => {
                 </div>
 
                 <div className="relative">
-                  <img 
-                    src="/lovable-uploads/40777a1a-2e64-49d7-bba5-d08d995054ad.png" 
-                    alt="Site Development Plan" 
-                    className="w-full h-auto rounded-lg shadow-lg"
-                  />
+                  <div className="w-full h-64 bg-gradient-to-br from-blue-100 to-green-100 rounded-lg shadow-lg flex items-center justify-center">
+                    <div className="text-center space-y-4">
+                      <Map className="w-16 h-16 text-primary mx-auto" />
+                      <div className="space-y-2">
+                        <h5 className="text-lg font-semibold text-primary">Site Development Plan</h5>
+                        <p className="text-sm text-muted-foreground px-4">
+                          Detailed architectural plans and site layout coming soon
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

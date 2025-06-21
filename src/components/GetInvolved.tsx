@@ -8,23 +8,23 @@ const GetInvolved = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="get-involved" className="py-20 bg-white">
+    <section id="get-involved" className="py-16 sm:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto space-y-16">
+        <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16">
           <div className="text-center space-y-6 animate-fade-in">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
               Be Part of Something Extraordinary
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Help us build the first children's museum in south suburban Cook County. 
               Your support today makes wonder accessible for generations tomorrow.
             </p>
           </div>
 
           {/* Primary CTA - Newsletter Focus */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 lg:p-12 rounded-2xl text-center shadow-2xl">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Stay Connected to Our Journey</h3>
-            <p className="text-lg lg:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 sm:p-8 lg:p-12 rounded-2xl text-center shadow-2xl">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">Stay Connected to Our Journey</h3>
+            <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
               Be the first to know about our progress, community events, and opportunities 
               to be part of bringing this vision to life.
             </p>
@@ -33,9 +33,9 @@ const GetInvolved = () => {
                 trigger={
                   <Button 
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6"
+                    className="bg-white text-blue-600 hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
                   >
-                    <Mail className="mr-2 h-5 w-5" />
+                    <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     Join Our Community
                   </Button>
                 }
@@ -44,14 +44,14 @@ const GetInvolved = () => {
           </div>
 
           {/* Secondary Actions */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg text-center space-y-6">
-              <div className="flex justify-center mb-6">
-                <img src="/images/Icons/Partnership.png?v=2" alt="Partnership Opportunities" className="w-60 h-60 object-contain" />
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <img src="/images/Icons/Partnership.png?v=2" alt="Partnership Opportunities" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">Partnership Opportunities</h3>
-                <p className="text-gray-800">
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Partnership Opportunities</h3>
+                <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
                   Interested in corporate sponsorship or major gift opportunities? 
                   Let's discuss how you can help make this vision a reality.
                 </p>
@@ -59,17 +59,17 @@ const GetInvolved = () => {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg text-center space-y-6">
-              <div className="flex justify-center mb-6">
-                <img src="/images/Icons/Leadership.png?v=2" alt="Meet Our Leadership" className="w-60 h-60 object-contain" />
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <img src="/images/Icons/Leadership.png?v=2" alt="Meet Our Leadership" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">Meet Our Leadership</h3>
-                <p className="text-gray-800">
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Meet Our Leadership</h3>
+                <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
                   Meet the experienced board members leading this vision with expertise in finance, education, and community development.
                 </p>
                 <Button 
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="bg-blue-600 hover:bg-blue-700 text-sm sm:text-base"
                   onClick={() => navigate('/leadership')}
                 >
                   <Users className="mr-2 h-4 w-4" />
@@ -80,14 +80,14 @@ const GetInvolved = () => {
           </div>
 
           {/* Simple Contact Info */}
-          <div className="text-center bg-gray-50 p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Questions or Ideas?</h3>
-            <p className="text-gray-800 mb-4">
+          <div className="text-center bg-gray-50 p-6 sm:p-8 rounded-lg shadow-lg">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Questions or Ideas?</h3>
+            <p className="text-sm sm:text-base text-gray-800 mb-4 leading-relaxed">
               We'd love to hear from community members who want to be part of this journey.
             </p>
             <Button 
               variant="outline"
-              className="border-gray-300 text-gray-900 hover:bg-gray-50"
+              className="border-gray-300 text-gray-900 hover:bg-gray-50 text-sm sm:text-base"
               onClick={() => window.location.href = 'mailto:info@mattesonchildrensmuseum.org'}
             >
               Contact Us

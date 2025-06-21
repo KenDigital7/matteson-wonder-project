@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/d28b307a-f288-4126-ba69-3c9b25921437.png" 
+                src="/images/Logo/MCM_Logo.png" 
                 alt="Matteson Children's Museum Logo" 
                 className="h-12 w-auto brightness-0 invert"
               />
