@@ -1,4 +1,4 @@
-import { Mail, Users } from "lucide-react";
+import { Mail, Users, Handshake, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import NewsletterModal from "./NewsletterModal";
@@ -6,6 +6,15 @@ import PartnershipModal from "./PartnershipModal";
 
 const GetInvolved = () => {
   const navigate = useNavigate();
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    img.style.display = 'none';
+    const fallback = img.nextElementSibling as HTMLElement;
+    if (fallback) {
+      fallback.style.display = 'flex';
+    }
+  };
 
   return (
     <section id="get-involved" className="py-16 sm:py-20 bg-white">
@@ -47,7 +56,15 @@ const GetInvolved = () => {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
               <div className="flex justify-center mb-4 sm:mb-6">
-                <img src="/images/Icons/Partnership.png?v=3" alt="Partnership Opportunities" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                <img 
+                  src="https://kendigital7.github.io/matteson-wonder-project/images/Icons/Partnership.png" 
+                  alt="Partnership Opportunities" 
+                  className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain"
+                  onError={handleImageError}
+                />
+                <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-purple-100 rounded-lg flex items-center justify-center hidden">
+                  <Handshake className="w-16 h-16 sm:w-24 sm:h-24 text-purple-500" />
+                </div>
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Partnership Opportunities</h3>
@@ -61,7 +78,15 @@ const GetInvolved = () => {
 
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center space-y-4 sm:space-y-6">
               <div className="flex justify-center mb-4 sm:mb-6">
-                <img src="/images/Icons/Leadership.png?v=3" alt="Meet Our Leadership" className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain" />
+                <img 
+                  src="https://kendigital7.github.io/matteson-wonder-project/images/Icons/Leadership.png" 
+                  alt="Meet Our Leadership" 
+                  className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 object-contain"
+                  onError={handleImageError}
+                />
+                <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-indigo-100 rounded-lg flex items-center justify-center hidden">
+                  <UserCheck className="w-16 h-16 sm:w-24 sm:h-24 text-indigo-500" />
+                </div>
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900">Meet Our Leadership</h3>
