@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Mail, User } from "lucide-react";
+import { User } from "lucide-react";
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -192,35 +192,6 @@ const LeadershipPage = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl font-bold text-foreground">Connect with Our Leadership</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our experienced board combines decades of expertise in finance, education, 
-              community development, and nonprofit management.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <a 
-                href="mailto:info@mattesonchildrensmuseum.org" 
-                className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                <span>Contact Leadership</span>
-              </a>
-              <button 
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                Back to Top
-              </button>
             </div>
           </div>
         </div>

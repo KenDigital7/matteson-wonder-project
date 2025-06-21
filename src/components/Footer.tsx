@@ -1,28 +1,51 @@
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, ExternalLink } from "lucide-react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import NewsletterModal from "./NewsletterModal";
+import PartnershipModal from "./PartnershipModal";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    // If we're on the home page, scroll to the section
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to home and then scroll
+      navigate('/');
+      // Use setTimeout to allow navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12">
+          {/* Left Column: Logo + Mission */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/images/Logo/MCM_Logo.png" 
-                alt="Matteson Children's Museum Logo" 
-                className="h-12 w-auto brightness-0 invert"
-              />
-              <div>
-                <h3 className="text-xl font-bold">Matteson Children's Museum</h3>
-                <p className="text-sm opacity-90">Invest in Wonder</p>
-              </div>
+            <div>
+              <h3 className="text-xl font-bold">Matteson Children's Museum</h3>
+              <p className="text-sm opacity-80 leading-relaxed">
+                Promoting educational equity through extraordinary learning experiences in south suburban Cook County.
+              </p>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed">
-              Creating extraordinary learning experiences that promote educational equity 
-              in south suburban Cook County.
-            </p>
+            <div className="text-sm">
+              <p className="font-semibold text-green-200">501(c)(3) Nonprofit Organization</p>
+              <p className="text-xs opacity-80 mt-1">Your support makes a lasting impact</p>
+            </div>
           </div>
 
+          {/* Middle Column: Contact Info */}
           <div className="space-y-6">
             <h4 className="text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3 text-sm">
@@ -42,35 +65,46 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Right Column: Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold">Project Timeline</h4>
+            <h4 className="text-lg font-semibold">Quick Links</h4>
             <div className="space-y-3 text-sm">
-              <div className="flex justify-between">
-                <span>Incorporated:</span>
-                <span className="font-medium">May 2024</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Feasibility Study:</span>
-                <span className="font-medium">2025</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Construction:</span>
-                <span className="font-medium">2027-2028</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Grand Opening:</span>
-                <span className="font-medium">Q4 2028</span>
-              </div>
+              <Link 
+                to="/leadership" 
+                className="flex items-center space-x-2 hover:text-yellow-200 transition-colors"
+              >
+                <ExternalLink className="w-3 h-3" />
+                <span>Leadership Team</span>
+              </Link>
+              <NewsletterModal 
+                trigger={
+                  <button className="flex items-center space-x-2 hover:text-yellow-200 transition-colors text-left">
+                    <ExternalLink className="w-3 h-3" />
+                    <span>Newsletter Signup</span>
+                  </button>
+                }
+              />
+              <PartnershipModal 
+                trigger={
+                  <button className="flex items-center space-x-2 hover:text-yellow-200 transition-colors text-left">
+                    <ExternalLink className="w-3 h-3" />
+                    <span>Partnership Opportunities</span>
+                  </button>
+                }
+              />
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="flex items-center space-x-2 hover:text-yellow-200 transition-colors text-left"
+              >
+                <ExternalLink className="w-3 h-3" />
+                <span>About the Project</span>
+              </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-sm opacity-80 space-y-2">
-          <p>&copy; 2024 Matteson Children's Museum. All rights reserved.</p>
-          <p>501(c)(3) Nonprofit Organization</p>
-          <p>
-            Uicons by <a href="https://www.flaticon.com/uicons" className="hover:underline opacity-60">Flaticon</a>
-          </p>
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-sm opacity-80">
+          <p>&copy; 2025 Matteson Children's Museum. All rights reserved.</p>
         </div>
       </div>
     </footer>

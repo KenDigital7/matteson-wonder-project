@@ -44,7 +44,6 @@ const GetInvolved = () => {
                     size="lg"
                     className="bg-white text-blue-600 hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
                   >
-                    <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     Join Our Community
                   </Button>
                 }
@@ -72,7 +71,15 @@ const GetInvolved = () => {
                   Interested in corporate sponsorship or major gift opportunities? 
                   Let's discuss how you can help make this vision a reality.
                 </p>
-                <PartnershipModal />
+                <PartnershipModal 
+                  trigger={
+                    <Button 
+                      className="bg-green-600 hover:bg-green-700 text-sm sm:text-base"
+                    >
+                      Partnership Inquiries
+                    </Button>
+                  }
+                />
               </div>
             </div>
 
@@ -97,7 +104,6 @@ const GetInvolved = () => {
                   className="bg-blue-600 hover:bg-blue-700 text-sm sm:text-base"
                   onClick={() => navigate('/leadership')}
                 >
-                  <Users className="mr-2 h-4 w-4" />
                   View Leadership Team
                 </Button>
               </div>

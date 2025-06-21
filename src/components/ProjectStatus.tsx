@@ -36,8 +36,8 @@ const ProjectStatus = () => {
                   <CheckCircle className="w-16 h-16 sm:w-24 sm:h-24 text-green-500" />
                 </div>
               </div>
-              <h3 className="text-base sm:text-lg font-semibold mb-2 text-green-700">Completed</h3>
-              <p className="text-xs sm:text-sm text-gray-800">
+              <h3 className="text-base sm:text-lg font-semibold mb-2 text-green-700 text-center">Completed</h3>
+              <p className="text-xs sm:text-sm text-gray-800 text-center">
                 Museum incorporated, community support secured, site identified
               </p>
             </div>
@@ -54,8 +54,8 @@ const ProjectStatus = () => {
                   <Target className="w-16 h-16 sm:w-24 sm:h-24 text-orange-500" />
                 </div>
               </div>
-              <h3 className="text-base sm:text-lg font-semibold mb-2 text-orange-700">Current Focus</h3>
-              <p className="text-xs sm:text-sm text-gray-800">
+              <h3 className="text-base sm:text-lg font-semibold mb-2 text-orange-700 text-center">Current Focus</h3>
+              <p className="text-xs sm:text-sm text-gray-800 text-center">
                 Feasibility study underway, seeking community investors and supporters
               </p>
             </div>
@@ -72,8 +72,8 @@ const ProjectStatus = () => {
                   <Calendar className="w-16 h-16 sm:w-24 sm:h-24 text-blue-500" />
                 </div>
               </div>
-              <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-700">Timeline</h3>
-              <p className="text-xs sm:text-sm text-gray-800">
+              <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-700 text-center">Timeline</h3>
+              <p className="text-xs sm:text-sm text-gray-800 text-center">
                 Opening planned for 2028 at the former Lincoln Mall site
               </p>
             </div>
