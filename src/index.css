@@ -212,15 +212,105 @@
 .nav-underline::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  background: currentColor;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
 .nav-underline:hover::after {
   width: 80%;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  /* Ensure proper touch targets */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on small screens */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Prevent horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  /* Optimize scroll behavior */
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  /* Improve form inputs on mobile */
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Better spacing for mobile cards */
+  .mobile-card-spacing {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mobile-friendly image sizing */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* High-DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp images on retina displays */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape phone orientation */
+@media (max-width: 896px) and (orientation: landscape) {
+  /* Adjust heights for landscape mobile */
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  /* Reduce padding in landscape mode */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus states for keyboard navigation */
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Dark mode considerations for mobile */
+@media (prefers-color-scheme: dark) {
+  /* Adjust for better mobile dark mode experience if needed */
+  html {
+    color-scheme: dark;
+  }
 }

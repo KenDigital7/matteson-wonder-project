@@ -47,7 +47,7 @@ const Impact = () => {
           {/* Future Vision */}
           <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-lg text-center">
             <div className="max-w-4xl mx-auto space-y-8">
-              <h3 className="text-2xl lg:text-3xl font-bold text-primary whitespace-nowrap text-center">Rooted in Hope. Powered by Community. Built for Children.</h3>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary text-center">Rooted in Hope. Powered by Community. Built for Children.</h3>
               <p className="text-lg text-muted-foreground">
                 The Matteson Children's Museum will stand as a beacon of hope and opportunity—proof that 
                 when communities come together with bold belief and strategic investment, extraordinary 

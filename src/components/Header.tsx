@@ -48,10 +48,10 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex items-center cursor-pointer group" onClick={navigateToHome}>
             <div>
-              <h1 className="text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+              <h1 className="text-lg sm:text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
                 Matteson Children's Museum
               </h1>
-              <p className="text-sm text-gray-600 font-medium">Invest in Wonder</p>
+              <p className="text-xs sm:text-sm text-gray-600 font-medium">Invest in Wonder</p>
             </div>
           </div>
 

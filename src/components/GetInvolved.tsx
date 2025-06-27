@@ -42,7 +42,7 @@ const GetInvolved = () => {
                 trigger={
                   <Button 
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
+                    className="bg-white text-blue-600 hover:bg-gray-100 text-sm sm:text-base lg:text-lg px-4 sm:px-6 lg:px-8 py-3 sm:py-4 lg:py-6 min-h-[44px]"
                   >
                     Join Our Community
                   </Button>
@@ -74,7 +74,7 @@ const GetInvolved = () => {
                 <PartnershipModal 
                   trigger={
                     <Button 
-                      className="bg-green-600 hover:bg-green-700 text-sm sm:text-base"
+                      className="bg-green-600 hover:bg-green-700 text-sm sm:text-base min-h-[44px] px-4 py-2"
                     >
                       Partnership Inquiries
                     </Button>
@@ -101,7 +101,7 @@ const GetInvolved = () => {
                   Meet the experienced board members leading this vision with expertise in finance, education, and community development.
                 </p>
                 <Button 
-                  className="bg-blue-600 hover:bg-blue-700 text-sm sm:text-base"
+                  className="bg-blue-600 hover:bg-blue-700 text-sm sm:text-base min-h-[44px] px-4 py-2"
                   onClick={() => navigate('/leadership')}
                 >
                   View Leadership Team
@@ -118,7 +118,7 @@ const GetInvolved = () => {
             </p>
             <Button 
               variant="outline"
-              className="border-gray-300 text-gray-900 hover:bg-gray-50 text-sm sm:text-base"
+              className="border-gray-300 text-gray-900 hover:bg-gray-50 text-sm sm:text-base min-h-[44px] px-4 py-2"
               onClick={() => window.location.href = 'mailto:info@mattesonchildrensmuseum.org'}
             >
               Contact Us

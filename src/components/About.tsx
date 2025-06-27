@@ -16,11 +16,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Main Message */}
-          <div className="text-center space-y-6 flex flex-col items-center justify-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center leading-tight">
+          <div className="text-center space-y-4 sm:space-y-6 flex flex-col items-center justify-center">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-white text-center leading-tight px-2">
              Rooted in Hope. Powered by Community. Built for Children.
             </h2>
-            <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
               Illinois ranks among the most inequitable states for educational opportunity. 
               We're changing that by creating an extraordinary 50,000 sq ft children's museum 
               in Matteson, bringing world-class learning experiences to south suburban Cook County families.

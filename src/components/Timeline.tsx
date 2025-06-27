@@ -163,14 +163,14 @@ const Timeline = () => {
     <section id="timeline" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
-          <div className="text-center space-y-6 animate-fade-in">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary">Project Timeline</h2>
-            <p className="text-xl text-muted-foreground">
+          <div className="text-center space-y-4 sm:space-y-6 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">Project Timeline</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground px-4">
               From incorporation to grand opening: our roadmap to creating the Matteson Children's Museum
             </p>
-            <div className="inline-flex items-center space-x-2 bg-orange-100 px-4 py-2 rounded-full">
-              <Clock className="w-5 h-5 text-orange-600" />
-              <span className="text-orange-800 font-semibold">We Are Here: Q1 2025</span>
+            <div className="inline-flex items-center space-x-2 bg-orange-100 px-3 sm:px-4 py-2 rounded-full">
+              <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600" />
+              <span className="text-sm sm:text-base text-orange-800 font-semibold">We Are Here: Q1 2025</span>
             </div>
           </div>
 
@@ -181,19 +181,19 @@ const Timeline = () => {
                 value={phase.id}
                 className={`bg-white rounded-lg border-2 border-gray-200 overflow-hidden ${getPhaseStatusColor(phase.status)}`}
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50">
-                  <div className="flex items-center space-x-4 w-full">
-                    <div className={`p-3 rounded-full ${phase.color}`}>
-                      <phase.icon className="w-6 h-6" />
+                <AccordionTrigger className="px-4 sm:px-6 py-3 sm:py-4 hover:no-underline hover:bg-gray-50">
+                  <div className="flex items-center space-x-3 sm:space-x-4 w-full">
+                    <div className={`p-2 sm:p-3 rounded-full ${phase.color}`}>
+                      <phase.icon className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <div className="flex-1 text-left">
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full space-y-1 sm:space-y-0">
                         <div>
-                          <h3 className="text-lg font-semibold text-foreground">{phase.title}</h3>
-                          <p className="text-sm text-muted-foreground">{phase.period}</p>
+                          <h3 className="text-base sm:text-lg font-semibold text-foreground">{phase.title}</h3>
+                          <p className="text-xs sm:text-sm text-muted-foreground">{phase.period}</p>
                         </div>
-                        <div className="text-right">
-                          <p className="text-sm text-muted-foreground">{phase.description}</p>
+                        <div className="sm:text-right">
+                          <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">{phase.description}</p>
                           {phase.status === "current" && (
                             <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
                               Active Phase
