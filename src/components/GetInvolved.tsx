@@ -119,7 +119,7 @@ const GetInvolved = () => {
             <Button 
               variant="outline"
               className="border-gray-300 text-gray-900 hover:bg-gray-50 text-sm sm:text-base min-h-[44px] px-4 py-2"
-              onClick={() => window.location.href = 'mailto:info@mattesonchildrensmuseum.org'}
+              onClick={() => window.location.href = 'mailto:info@mattesoncm.org'}
             >
               Contact Us
             </Button>

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kendigital7.github.io/matteson-wonder-project",
+  "homepage": "https://mattesoncm.org",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
