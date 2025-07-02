@@ -3,6 +3,7 @@ import { Mail, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/lib/supabase";
 import {
   Dialog,
   DialogContent,
@@ -20,17 +21,47 @@ const NewsletterModal = ({ trigger }: NewsletterModalProps) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Thank you for subscribing!",
-      description: "You'll receive updates about our progress and opportunities to get involved.",
-    });
-    setEmail("");
-    setName("");
-    setIsOpen(false);
+    setIsLoading(true);
+
+    try {
+      const { error } = await supabase
+        .from('newsletter_subscribers')
+        .insert([{ name, email }]);
+
+      if (error) {
+        if (error.code === '23505') { // Unique constraint violation
+          toast({
+            title: "Already subscribed!",
+            description: "This email is already on our newsletter list.",
+            variant: "destructive"
+          });
+        } else {
+          throw error;
+        }
+      } else {
+        toast({
+          title: "Thank you for subscribing!",
+          description: "You'll receive updates about our progress and opportunities to get involved.",
+        });
+        setEmail("");
+        setName("");
+        setIsOpen(false);
+      }
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const defaultTrigger = (
@@ -62,6 +93,7 @@ const NewsletterModal = ({ trigger }: NewsletterModalProps) => {
               onChange={(e) => setName(e.target.value)}
               required
               className="h-12"
+              disabled={isLoading}
             />
             <Input
               type="email"
@@ -70,6 +102,7 @@ const NewsletterModal = ({ trigger }: NewsletterModalProps) => {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="h-12"
+              disabled={isLoading}
             />
           </div>
           
@@ -77,15 +110,17 @@ const NewsletterModal = ({ trigger }: NewsletterModalProps) => {
             <Button 
               type="submit" 
               className="flex-1 bg-blue-600 hover:bg-blue-700 h-12"
+              disabled={isLoading}
             >
               <Mail className="mr-2 h-4 w-4" />
-              Subscribe to Updates
+              {isLoading ? "Subscribing..." : "Subscribe to Updates"}
             </Button>
             <Button 
               type="button" 
               variant="outline" 
               onClick={() => setIsOpen(false)}
               className="px-4"
+              disabled={isLoading}
             >
               <X className="h-4 w-4" />
             </Button>
