@@ -19,6 +19,13 @@ const Index = () => {
       <Header />
       <Hero />
       
+      {/* Wave divider between Hero and About */}
+      <SectionDivider 
+        type="wave-smooth"
+        height="80px"
+        color="hsl(var(--background))"
+      />
+      
       <About />
       
       {/* Transition wave from orange to white */}
@@ -31,23 +38,7 @@ const Index = () => {
       />
       
       <VisionCarousel />
-      
-      {/* Organic wave transition - natural and flowing */}
-      <SectionDivider 
-        type="wave-organic" 
-        height="80px"
-        color="#9333EA"
-      />
-      
       <ProjectStatus />
-      
-      {/* Puzzle pieces transition - pieces coming together */}
-      <SectionDivider 
-        type="puzzle" 
-        height="100px" 
-        color="#9333EA"
-      />
-      
       <GetInvolved />
       <Footer />
     </div>
