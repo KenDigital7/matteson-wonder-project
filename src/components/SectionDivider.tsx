@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface SectionDividerProps {
-  type?: 'blocks' | 'paint' | 'airplanes' | 'handprints' | 'crayons' | 'puzzle' | 'books' | 'toys' | 'wave' | 'wave-smooth' | 'wave-layered' | 'wave-organic' | 'wave-transition';
+  type?: 'blocks' | 'paint' | 'airplanes' | 'handprints' | 'crayons' | 'puzzle' | 'books' | 'toys' | 'wave' | 'wave-smooth' | 'wave-layered' | 'wave-organic' | 'wave-transition' | 'triangle' | 'triangle-asymmetric' | 'zigzag' | 'mountains' | 'clouds' | 'diagonal' | 'curved-arc' | 'split' | 'pyramid' | 'geometric' | 'tilt' | 'arrow' | 'book-curve';
   height?: string;
   animated?: boolean;
   color?: string;
@@ -53,10 +53,11 @@ const SectionDivider: React.FC<SectionDividerProps> = ({
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
               className="w-full h-full"
+              style={{ fill: color }}
             >
               <path
                 d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
-                fill={color}
+                style={{ fill: 'inherit' }}
                 className={animated ? 'animate-pulse' : ''}
               />
             </svg>
@@ -70,10 +71,11 @@ const SectionDivider: React.FC<SectionDividerProps> = ({
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
               className="w-full h-full"
+              style={{ fill: color }}
             >
               <path
                 d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z"
-                fill={color}
+                style={{ fill: 'inherit' }}
                 className={animated ? 'animate-pulse' : ''}
               />
             </svg>
@@ -301,6 +303,244 @@ const SectionDivider: React.FC<SectionDividerProps> = ({
                 mask="url(#puzzleMask)"
                 className={animated ? 'animate-pulse' : ''}
               />
+            </svg>
+          </div>
+        );
+
+      case 'triangle':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L600,0 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'triangle-asymmetric':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L800,0 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'zigzag':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L150,0 L300,120 L450,0 L600,120 L750,0 L900,120 L1050,0 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'mountains':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L200,60 L400,10 L600,80 L800,20 L1000,70 L1200,40 L1200,120 Z"
+                fill={color}
+                opacity="0.9"
+                className={animated ? 'animate-pulse' : ''}
+              />
+              <path
+                d="M0,120 L150,80 L350,30 L550,90 L750,45 L950,85 L1200,60 L1200,120 Z"
+                fill={color}
+                opacity="0.7"
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'clouds':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,100 C100,50 150,20 250,40 C350,60 400,20 500,50 C600,80 650,30 750,60 C850,90 900,40 1000,70 C1100,100 1150,60 1200,80 L1200,120 L0,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+              <circle cx="150" cy="60" r="20" fill={color} opacity="0.8" />
+              <circle cx="400" cy="45" r="25" fill={color} opacity="0.8" />
+              <circle cx="700" cy="55" r="18" fill={color} opacity="0.8" />
+              <circle cx="950" cy="50" r="22" fill={color} opacity="0.8" />
+            </svg>
+          </div>
+        );
+
+      case 'diagonal':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L1200,0 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'curved-arc':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 Q600,0 1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'split':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,0 L580,120 L620,120 L1200,0 L1200,120 L0,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'pyramid':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L300,60 L600,0 L900,60 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'geometric':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L200,80 L300,40 L400,80 L600,20 L800,60 L900,100 L1000,40 L1200,80 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'tilt':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,60 L1200,120 L1200,120 L0,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'arrow':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,120 L0,40 L580,40 L600,0 L620,40 L1200,40 L1200,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+            </svg>
+          </div>
+        );
+
+      case 'book-curve':
+        return (
+          <div className={baseClasses} style={{ height }}>
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,80 C200,40 400,100 600,60 C800,20 1000,90 1200,50 L1200,120 L0,120 Z"
+                fill={color}
+                className={animated ? 'animate-pulse' : ''}
+              />
+              {/* Book spine details */}
+              <rect x="100" y="70" width="4" height="30" fill={color} opacity="0.7" />
+              <rect x="300" y="65" width="4" height="35" fill={color} opacity="0.7" />
+              <rect x="500" y="75" width="4" height="25" fill={color} opacity="0.7" />
+              <rect x="700" y="60" width="4" height="40" fill={color} opacity="0.7" />
+              <rect x="900" y="80" width="4" height="20" fill={color} opacity="0.7" />
             </svg>
           </div>
         );

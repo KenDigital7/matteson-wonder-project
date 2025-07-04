@@ -233,33 +233,16 @@ const Hero = () => {
             <div className="text-center lg:text-left space-y-3 sm:space-y-4 lg:space-y-6">
               <div className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight text-gray-800 transition-all duration-300">
                 <TextCursorProximity
-                  label="Imagination Knows"
+                  label="Imagination Knows No Zip Code"
                   className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight text-gray-800 block mb-2"
                   styles={{
                     transform: {
                       from: "scale(1)",
-                      to: "scale(1.2)",
+                      to: "scale(1.1)",
                     },
                     color: { 
                       from: "#1F2937", 
                       to: "#FF6B35"
-                    },
-                  }}
-                  falloff="gaussian"
-                  radius={80}
-                  containerRef={containerRef}
-                />
-                <TextCursorProximity
-                  label="No Zip Code"
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight text-gray-800 block"
-                  styles={{
-                    transform: {
-                      from: "scale(1)",
-                      to: "scale(1.2)",
-                    },
-                    color: { 
-                      from: "#1F2937", 
-                      to: "#118AB2"
                     },
                   }}
                   falloff="gaussian"
