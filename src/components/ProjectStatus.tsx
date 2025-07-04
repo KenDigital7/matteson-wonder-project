@@ -36,8 +36,8 @@ const ProjectStatus = () => {
                   <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 text-green-500" />
                 </div>
               </div>
-              <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 text-green-700 text-center">Completed</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-gray-800 text-center leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-green-700 text-center">Completed</h3>
+              <p className="text-sm sm:text-base text-gray-800 text-center leading-relaxed">
                 Museum incorporated, community support secured, site identified
               </p>
             </div>
@@ -54,8 +54,8 @@ const ProjectStatus = () => {
                   <Target className="w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 text-orange-500" />
                 </div>
               </div>
-              <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 text-orange-700 text-center">Current Focus</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-gray-800 text-center leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-orange-700 text-center">Current Focus</h3>
+              <p className="text-sm sm:text-base text-gray-800 text-center leading-relaxed">
                 Feasibility study underway, seeking community investors and supporters
               </p>
             </div>
@@ -72,8 +72,8 @@ const ProjectStatus = () => {
                   <Calendar className="w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 text-blue-500" />
                 </div>
               </div>
-              <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2 text-blue-700 text-center">Timeline</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-gray-800 text-center leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-blue-700 text-center">Timeline</h3>
+              <p className="text-sm sm:text-base text-gray-800 text-center leading-relaxed">
                 Opening planned for 2028 at the former Lincoln Mall site
               </p>
             </div>
