@@ -166,7 +166,7 @@ const Leadership = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:info@mattesonchildrensmuseum.org" 
+                href="mailto:info@mattesoncm.org" 
                 className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 <Mail className="w-5 h-5" />

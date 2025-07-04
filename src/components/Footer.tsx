@@ -58,8 +58,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:info@mattesonchildrensmuseum.org" className="hover:underline break-all">
-                  info@mattesonchildrensmuseum.org
+                <a href="mailto:info@mattesoncm.org" className="hover:underline break-all">
+                  info@mattesoncm.org
                 </a>
               </div>
             </div>

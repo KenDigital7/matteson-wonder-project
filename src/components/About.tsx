@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Image, Users, TrendingUp } from "lucide-react";
+import logoImage from "/MCM_Logo_Transparent.png";
 
 const About = () => {
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
@@ -12,15 +13,26 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-16" style={{ backgroundColor: '#FF6B35' }}>
+    <section id="about" className="pt-1.5 pb-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto space-y-12">
-          {/* Main Message */}
-          <div className="text-center space-y-4 sm:space-y-6 flex flex-col items-center justify-center">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-white text-center leading-tight px-2">
+        <div className="max-w-6xl mx-auto space-y-4">
+          {/* Logo and Main Message - Ultra Compact */}
+          <div className="text-center flex flex-col items-center justify-center">
+            <img
+              src={logoImage}
+              alt="Matteson Children's Museum Logo"
+              className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-contain hover:scale-105 transition-transform duration-300 -mb-2"
+              style={{ 
+                backgroundColor: 'transparent',
+                border: 'none',
+                outline: 'none',
+                boxShadow: 'none'
+              }}
+            />
+            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 text-center leading-tight px-2 mb-1">
              Rooted in Hope. Powered by Community. Built for Children.
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-tight px-4">
               Illinois ranks among the most inequitable states for educational opportunity. 
               We're changing that by creating an extraordinary 50,000 sq ft children's museum 
               in Matteson, bringing world-class learning experiences to south suburban Cook County families.
@@ -28,7 +40,7 @@ const About = () => {
           </div>
 
           {/* Problem & Solution */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8" style={{ marginTop: '25px' }}>
             <Card className="bg-white/95 backdrop-blur-sm shadow-lg border-l-4 border-red-600">
               <CardContent className="p-6 sm:p-8">
                 <h3 className="text-xl sm:text-2xl font-bold text-red-700 mb-4">The Challenge</h3>
@@ -51,7 +63,7 @@ const About = () => {
           </div>
 
           {/* Key Impact Points */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{ marginTop: '35px' }}>
             <Card className="text-center hover:scale-105 transition-transform duration-300 bg-white shadow-lg">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex justify-center mb-4 sm:mb-6">

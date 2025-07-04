@@ -120,14 +120,14 @@ const VisionCarousel = () => {
   );
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20" style={{ backgroundColor: '#0066FF' }}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Imagination Has No Limit
           </h2>
-          <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-lg sm:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed px-4">
             We envision a state-of-the-art facility that will serve as a cornerstone of the Southland community—
             a destination where wonder meets learning, creativity flourishes, and every child's potential is unlocked. 
             This revolutionary space will become a beloved community staple, inspiring generations of young minds 
@@ -256,10 +256,10 @@ const VisionCarousel = () => {
             {allImages.map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300 ${
+                className={`w-3 h-3 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50 ${
                   index === selectedIndex
-                    ? 'bg-blue-600 opacity-100 scale-110 shadow-lg'
-                    : 'bg-gray-400 opacity-50 hover:opacity-80 hover:bg-blue-400'
+                    ? 'bg-white opacity-100 scale-110 shadow-lg'
+                    : 'bg-white/40 opacity-70 hover:opacity-90 hover:bg-white/60'
                 }`}
                 onClick={() => emblaApi?.scrollTo(index)}
                 aria-label={`Go to slide ${index + 1}`}
