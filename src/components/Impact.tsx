@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Impact = () => {
   return (
-    <section id="impact" className="py-20 bg-gradient-to-b from-green-50 to-blue-50">
+    <section id="impact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-6 animate-fade-in">

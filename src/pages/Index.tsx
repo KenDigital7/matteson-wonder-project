@@ -19,13 +19,6 @@ const Index = () => {
       <Header />
       <Hero />
       
-      {/* Wave divider between Hero and About */}
-      <SectionDivider 
-        type="wave-smooth"
-        height="80px"
-        color="hsl(var(--background))"
-      />
-      
       <About />
       
       {/* Transition wave from orange to white */}
