@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 // Updated for custom domain deployment
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/' : '/matteson-wonder-project/',
+  base: '/matteson-wonder-project/',
   server: {
     host: "::",
     port: 8080,
