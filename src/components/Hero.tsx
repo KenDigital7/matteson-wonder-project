@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import buildingImage from "/images/Hero Section/MCM_Building_2.png";
+import buildingImage from "/images/Hero Section/MCM_Building_2.jpg";
 import TextCursorProximity from "@/components/ui/text-cursor-proximity";
 
 const Hero = () => {
