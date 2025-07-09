@@ -125,12 +125,15 @@ const getAutoReplyEmailHtml = (name: string) => `
     }
     .button {
       display: inline-block;
-      background-color: #2563eb;
+      background-color: #1e40af;
       color: white;
       padding: 12px 24px;
       text-decoration: none;
       border-radius: 6px;
       margin: 20px 0;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      border: 2px solid #1e40af;
     }
   </style>
 </head>

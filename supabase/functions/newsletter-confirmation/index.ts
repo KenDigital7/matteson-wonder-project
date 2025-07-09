@@ -47,12 +47,15 @@ const getWelcomeEmailHtml = (name: string) => `
     }
     .button {
       display: inline-block;
-      background-color: #16a34a;
+      background-color: #166534;
       color: white;
       padding: 12px 24px;
       text-decoration: none;
       border-radius: 6px;
       margin: 20px 0;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      border: 2px solid #166534;
     }
   </style>
 </head>
