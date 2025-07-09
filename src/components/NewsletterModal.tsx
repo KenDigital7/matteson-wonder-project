@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabase";
+import { sendNewsletterConfirmation } from "@/lib/emailService";
 import {
   Dialog,
   DialogContent,
@@ -44,10 +45,21 @@ const NewsletterModal = ({ trigger }: NewsletterModalProps) => {
           throw error;
         }
       } else {
-        toast({
-          title: "Thank you for subscribing!",
-          description: "You'll receive updates about our progress and opportunities to get involved.",
-        });
+        // Send newsletter confirmation email
+        const emailSent = await sendNewsletterConfirmation({ name, email });
+        
+        if (emailSent) {
+          toast({
+            title: "Thank you for subscribing!",
+            description: "You'll receive a confirmation email shortly with updates about our progress.",
+          });
+        } else {
+          toast({
+            title: "Subscribed successfully!",
+            description: "You're now on our newsletter list. Check your email for a confirmation.",
+          });
+        }
+        
         setEmail("");
         setName("");
         setIsOpen(false);

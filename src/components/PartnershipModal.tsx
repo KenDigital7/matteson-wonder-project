@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabase";
+import { sendPartnershipInquiry } from "@/lib/emailService";
 import {
   Dialog,
   DialogContent,
@@ -39,10 +40,22 @@ const PartnershipModal = ({ trigger }: PartnershipModalProps) => {
         throw error;
       }
 
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you within 24 hours to discuss partnership opportunities.",
-      });
+      // Send email notifications via Edge Function
+      const partnershipData = { name, email, message };
+      const emailSent = await sendPartnershipInquiry(partnershipData);
+
+      if (emailSent) {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you within 24 hours to discuss partnership opportunities.",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "Your inquiry has been submitted. We'll get back to you within 24 hours.",
+        });
+      }
+      
       setEmail("");
       setName("");
       setMessage("");
