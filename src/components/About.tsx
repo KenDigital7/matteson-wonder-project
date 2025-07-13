@@ -45,7 +45,7 @@ const About = () => {
               <CardContent className="p-6 sm:p-8">
                 <h3 className="text-xl sm:text-2xl font-bold text-red-700 mb-4">The Challenge</h3>
                 <p className="text-base sm:text-lg text-gray-800">
-                  Children in our region travel <strong>25+ miles</strong> to reach the nearest children's museum, 
+                  Children in our region travel <strong>20+ miles</strong> to reach the nearest children's museum, 
                   limiting access to hands-on learning experiences that inspire creativity and critical thinking.
                 </p>
               </CardContent>
@@ -119,7 +119,7 @@ const About = () => {
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-900">Economic Impact</h4>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
-                  $15M+ annual economic impact and 100+ new jobs for our community
+                  $15M+ annual economic impact and significant job creation for our community
                 </p>
               </CardContent>
             </Card>

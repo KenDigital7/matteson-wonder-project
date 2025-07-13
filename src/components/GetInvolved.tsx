@@ -114,7 +114,7 @@ const GetInvolved = () => {
           <div className="text-center bg-gray-50 p-6 sm:p-8 rounded-lg shadow-lg">
             <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Questions or Ideas?</h3>
             <p className="text-sm sm:text-base text-gray-800 mb-4 leading-relaxed">
-              We'd love to hear from community members who want to be part of this journey.
+              We'd love to hear from anyone who wants to be part of this journey.
             </p>
             <Button 
               variant="outline"

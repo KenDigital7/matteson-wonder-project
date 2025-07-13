@@ -13,7 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const ComprehensiveStats = () => {
   const keyStats = [
     {
-      number: "25",
+      number: "20",
       label: "miles to nearest children's museum",
       icon: Navigation,
       color: "border-t-blue-500",
@@ -45,12 +45,12 @@ const ComprehensiveStats = () => {
       description: "Direct and indirect economic benefits"
     },
     {
-      number: "100+",
-      label: "new jobs created",
+      number: "Local",
+      label: "employment opportunities",
       icon: MapPin,
       color: "border-t-purple-500",
       iconColor: "text-purple-500",
-      description: "Full-time and part-time employment opportunities"
+      description: "Full-time and part-time jobs for our community"
     },
     {
       number: "2028",

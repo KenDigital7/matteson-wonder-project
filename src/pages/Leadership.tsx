@@ -16,14 +16,14 @@ const LeadershipPage = () => {
       name: "Michelle Kennedy",
       title: "Founder & Board President",
       position: "Founder + Executive Director + Board President",
-      image: "https://kendigital7.github.io/matteson-wonder-project/images/Logo/MCM_Logo.png", // Using museum logo as placeholder
-      bio: "Michelle Kennedy is the Founder + Executive Director + Board President of the Matteson Children's Museum (\"MCM\"). Michelle has worked for 25 years in Commercial Real Estate Finance and is currently a Vice president at US Bank. She specializes in providing equity and debt for complex urban projects with various forms of tax credit capital. Michelle has lived in Matteson for 19 years. She is also the Founder + former Producer of the Chicago South Side Film Festival. Michelle plans to enroll in Northwestern University's online Museum Studies Certificate program in the Summer of 2025."
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/Michelle.Kennedy.png",
+      bio: "Michelle Kennedy is the Founder + Executive Director + Board President of the Matteson Children's Museum (\"MCM\"). Michelle has worked for 25 years in Commercial Real Estate Finance and is currently a Vice President at US Bank. She specializes in providing equity and debt for complex urban projects with various forms of tax credit capital. Michelle has lived in Matteson for 19 years. She is also the Founder + former Producer of the Chicago South Side Film Festival."
     },
     {
       name: "Cecil Matthews", 
       title: "Director + Treasurer",
       position: "Director + Treasurer",
-      image: "https://kendigital7.github.io/matteson-wonder-project/images/Logo/MCM_Logo.png", // Using museum logo as placeholder
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership Headshots/Cecil.Mathews.webp",
       bio: "Cecil Matthews earned Bachelor of Science and a Master of Science degrees in Accounting from the University of Illinois. For the past 15 years, Cecil has resided in the South / Southwest suburbs – most recently in Frankfort, IL. Cecil has a diverse background in accounting, finance, and IT. He currently works as Director of Finance for a large Chicago law firm, and is also a licensed real estate broker and real estate investor."
     },
     {
