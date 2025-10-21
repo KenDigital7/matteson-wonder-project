@@ -15,7 +15,8 @@ const Leadership = () => {
         "Currently a Director in US Bank's Impact Finance Group",
         "Founder of the Chicago South Side Film Festival"
       ],
-      icon: Building
+      icon: Building,
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/Michelle.Kennedy.png"
     },
     {
       name: "Cecil Matthews",
@@ -27,7 +28,8 @@ const Leadership = () => {
         "Director of Finance for a large Chicago law firm",
         "Licensed real estate broker and real estate investor"
       ],
-      icon: GraduationCap
+      icon: GraduationCap,
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/Cecil.Mathews.webp"
     },
     {
       name: "Aleatha Muhammad",
@@ -40,7 +42,8 @@ const Leadership = () => {
         "Chicago West Chapter of Institute of Internal Auditors",
         "Lives in Maywood, IL"
       ],
-      icon: Users
+      icon: Users,
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/Aleatha.Muhammad.jpg"
     },
     {
       name: "LaTanya Harris",
@@ -53,7 +56,8 @@ const Leadership = () => {
         "Passionate about student development and community engagement",
         "Lives in Matteson, IL"
       ],
-      icon: GraduationCap
+      icon: GraduationCap,
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/LaTanya.Harris.png"
     },
     {
       name: "Bevon Joseph",
@@ -65,7 +69,8 @@ const Leadership = () => {
         "B.A. from DePaul University",
         "Kellogg School of Management Executive Education program"
       ],
-      icon: Users
+      icon: Users,
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/Bevon.Joseph.jpg"
     }
   ];
 
@@ -113,9 +118,11 @@ const Leadership = () => {
                 <Card key={index} className="hover-scale border-l-4 border-l-blue-500">
                   <CardContent className="p-8 space-y-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <member.icon className="w-6 h-6 text-blue-600" />
-                      </div>
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-24 h-24 object-cover flex-shrink-0"
+                      />
                       <div className="space-y-2 flex-1">
                         <h4 className="text-xl font-bold text-foreground">{member.name}</h4>
                         <p className="text-lg font-semibold text-blue-600">{member.title}</p>
