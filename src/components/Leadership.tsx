@@ -57,7 +57,7 @@ const Leadership = () => {
         "Lives in Matteson, IL"
       ],
       icon: GraduationCap,
-      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/LaTanya.Harris.png"
+      image: "https://kendigital7.github.io/matteson-wonder-project/images/Leadership%20Headshots/LaTanya.Harris.jpg"
     },
     {
       name: "Bevon Joseph",
